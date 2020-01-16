@@ -13,20 +13,20 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = () => {
+const Github = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "yearbook.png" }) {
+      placeholderImage: file(relativePath: { eq: "github.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1800) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 30) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Noam Sauer-Utley: The Github Wizard. A constant ray of sunshine that helped anyone who asked for help. I can count about 3 things on my hand that instantly brings me joy, and Noam is one of them. A genuinely lovely person who is always down to help whoever with a smile on their face." />
+  return <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="GitHub" />
 }
 
-export default Image
+export default Github

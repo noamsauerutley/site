@@ -13,7 +13,9 @@ aside,
 details,
 figcaption,
 figure,
-footer,
+footer {
+  margin: -50;
+}
 header,
 main,
 menu,
