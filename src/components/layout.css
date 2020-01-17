@@ -46,10 +46,13 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  transition: opacity .65s ease-in-out;
 }
-a:active,
-a:hover {
-  outline-width: 0;
+a:hover{
+  opacity: .7;
+}
+a:active{
+  opacity: .4;
 }
 abbr[title] {
   border-bottom: none;
