@@ -17,7 +17,7 @@ const IndexPage = () => (
     <div style={{ maxHeight: `1vh`, margin: "0 auto"}}>
       <Image />
     </div>
-    <div style={{ margin: `0 auto`, marginTop: "10vh", maxWidth: `60vw`, textAlign: "center", display: "flex", flexDirection: "row", justifyContent: "space-around"}}>
+    <div style={{ margin: `0 auto`, marginTop: "10vh", maxHeight: `60vw`, textAlign: "center", display: "flex", flexDirection: "row", justifyContent: "space-around"}}>
       <a style={{marginTop: "27vh"}} href="https://github.com/noamsauerutley"><Github /></a> 
       <a href="https://www.linkedin.com/in/noamsauerutley/"><LinkedIn /></a>
       <a style={{marginTop: "19vh"}} href="https://twitter.com/thevoidbutcozy"><Twitter /></a> 
