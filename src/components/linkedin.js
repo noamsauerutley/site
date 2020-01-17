@@ -18,7 +18,7 @@ const LinkedIn = () => {
     query {
       placeholderImage: file(relativePath: { eq: "linkedin.png" }) {
         childImageSharp {
-          fixed(width: 30) {
+          fixed(width: 45) {
             ...GatsbyImageSharpFixed
           }
         }

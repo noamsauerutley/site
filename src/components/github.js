@@ -16,9 +16,9 @@ import Img from "gatsby-image"
 const Github = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "github.png" }) {
+      placeholderImage: file(relativePath: { eq: "github-logo.png" }) {
         childImageSharp {
-          fixed(width: 30) {
+          fixed(width: 60) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -26,7 +26,7 @@ const Github = () => {
     }
   `)
 
-  return <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="GitHub" />
+  return <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Github" />
 }
 
 export default Github
