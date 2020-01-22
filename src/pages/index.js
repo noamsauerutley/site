@@ -14,9 +14,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
    
-    <div style={{ maxHeight: `1vh`, margin: "0 auto"}}>
+    {/* <div style={{ maxHeight: `1vh`, margin: "0 auto"}}>
       <Image />
-    </div>
+    </div> */}
     <div style={{ margin: `0 auto`, marginTop: "10vh", maxHeight: `60vw`, textAlign: "center", display: "flex", flexDirection: "row", justifyContent: "space-around"}}>
       <a style={{marginTop: "27vh"}} href="https://github.com/noamsauerutley"><Github /></a> 
       <a href="https://www.linkedin.com/in/noamsauerutley/"><LinkedIn /></a>
