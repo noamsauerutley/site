@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
@@ -19,30 +18,20 @@ const Header = ({ siteTitle, siteDescription }) => (
         flexDirection: "row",
       }}
     >
-      <h1 >
-        <Link
-          to="/"
-          style={{
+      <h1 style={{
             color: `black`,
             textDecoration: `none`,
             textAlign: `center`
-          }}
-        >
+          }}>
           {siteTitle}  
-        </Link>
       </h1>
-      <h4 style={{marginTop: "18px", marginLeft: "5px"}}>
-        <Link
-          to="/"
-          style={{
-            color: `black`,
-            textDecoration: `none`,
-            textAlign: `center`,
-            
-          }}
-        >
+      <h4 style={{
+        color: `black`,
+        textDecoration: `none`,
+        textAlign: `center`,
+        marginTop: "18px", 
+        marginLeft: "5px"}}>
           {siteDescription}
-        </Link>
       </h4>
     </div>
   </header>
