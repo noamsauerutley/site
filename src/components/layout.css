@@ -46,13 +46,6 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  transition: opacity .65s ease-in-out;
-}
-a:hover{
-  opacity: .7;
-}
-a:active{
-  opacity: .4;
 }
 abbr[title] {
   border-bottom: none;
@@ -621,6 +614,17 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: "";
+}
+.with_effect{
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  transition: opacity .65s ease-in-out;
+}
+.with_effect:hover{
+  opacity: .7;
+}
+.with_effect:active{
+  opacity: .4;
 }
 @media only screen and (max-width: 480px) {
   html {
