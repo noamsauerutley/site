@@ -618,7 +618,7 @@ pre tt:after {
 .with_effect{
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  transition: opacity .65s ease-in-out;
+  transition: opacity .5s ease-in-out;
 }
 .with_effect:hover{
   opacity: .7;
