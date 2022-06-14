@@ -21,6 +21,9 @@
       #email {
         cursor: pointer;
       }
+      #confirm {
+        visibility: hidden;
+      }
     </style>
   </head>
   <body>
@@ -33,13 +36,14 @@
     <p>I work in Elixir, Phoenix, GraphQL, and React.</p>
     <p>I play in Haskell, Gleam, Elm, and Rust.</p>
     <p>I (sometimes) write beginner-friendly algorithm solutions in JavaScript.</p>
-    <p id="email">noamsauerutley@protonmail.com</p>
+    <span id="email" onClick="copy()">noamsauerutley@protonmail.com</span><span id="confirm"> ✓</span>
     <script>
-      const copyText = document.getElementById("email");
-      copyText.select();
-      copyText.setSelectionRange(0, 99999); /* For mobile devices */
-      navigator.clipboard.writeText(copyText.value);
-      alert(copyText.value + " copied to clipboard");
+      function copy() {
+        var copyText = document.getElementById("email").innerText
+        navigator.clipboard.writeText(copyText)
+        var confirm = document.getElementById("confirm");
+        confirm.style.visibility = 'visible';
+      }
     </script> 
   </body>
 </html> 
