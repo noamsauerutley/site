@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Noam Sauer-Utley</title>
-<link rel="icon" type="image/x-icon" href="/images/favicon.png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #202023;
-    color: #f2f0ed;
-  }
-  a {
-    color: #3391ff;
-  }
-}
-</style>
-</head>
-<body>
-
-<h1>Noam Sauer-Utley</h1><h4>Full Stack Software Engineer, NYC</h4>
-<ul>
-    <li><a target=_blank href="https://www.github.com/noamsauerutley">Github</a></li>
-    <li><a target=_blank href="https://medium.com/@noamsauerutley">Blog</a></li>
-    <li><a target=_blank href="https://www.linkedin.com/in/noamsauerutley/">LinkedIn</a></li>
-</ul>
-<p>I work in Elixir, Phoenix, GraphQL, and React.</p>
-<p>I play in Haskell, Gleam, Elm, and Rust.</p>
-<p>I (sometimes) write beginner-friendly algorithm solutions in JavaScript.</p>
-<p>noamsauerutley@protonmail.com</p>
-</body>
+  <head>
+    <title>Noam Sauer-Utley</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #202023;
+          color: #f2f0ed;
+        }
+        a {
+          color: #3391ff;
+        }
+      }
+      #email {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Noam Sauer-Utley</h1><h4>Full Stack Software Engineer, NYC</h4>
+    <ul>
+        <li><a target=_blank href="https://www.github.com/noamsauerutley">Github</a></li>
+        <li><a target=_blank href="https://medium.com/@noamsauerutley">Blog</a></li>
+        <li><a target=_blank href="https://www.linkedin.com/in/noamsauerutley/">LinkedIn</a></li>
+    </ul>
+    <p>I work in Elixir, Phoenix, GraphQL, and React.</p>
+    <p>I play in Haskell, Gleam, Elm, and Rust.</p>
+    <p>I (sometimes) write beginner-friendly algorithm solutions in JavaScript.</p>
+    <p id="email">noamsauerutley@protonmail.com</p>
+    <script>
+      const copyText = document.getElementById("email");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); /* For mobile devices */
+      navigator.clipboard.writeText(copyText.value);
+      alert(copyText.value + " copied to clipboard");
+    </script> 
+  </body>
 </html> 
