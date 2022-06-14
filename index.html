@@ -39,8 +39,8 @@
     <span id="email" onClick="copy()">noamsauerutley@protonmail.com</span><span id="confirm"> ✓</span>
     <script>
       function copy() {
-        var copyText = document.getElementById("email").innerText
-        navigator.clipboard.writeText(copyText)
+        var copyText = document.getElementById("email").innerText;
+        navigator.clipboard.writeText(copyText);
         var confirm = document.getElementById("confirm");
         confirm.style.visibility = 'visible';
       }
